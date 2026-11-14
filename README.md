@@ -32,7 +32,7 @@ What we need:
 ```
 cat cipher.txt | base64 -d | openssl pkeyutl \
   -decrypt \
-  -inkey private2.pem \
+  -inkey private.pem \
   -in /dev/stdin \
   -pkeyopt rsa_padding_mode:oaep \
   -pkeyopt rsa_oaep_md:sha256
